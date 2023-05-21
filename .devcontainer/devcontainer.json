@@ -4,8 +4,6 @@
         "dockerfile": "Dockerfile"
     },
     
-    "remoteUser": "coder",
-        
-    "postCreateCommand": "ls -la /workspaces"
+    "remoteUser": "coder"
     
 }
