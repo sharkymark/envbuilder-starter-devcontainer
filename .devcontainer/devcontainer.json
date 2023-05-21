@@ -1,5 +1,8 @@
 {
+    "name": "Starter",
     "build": {
         "dockerfile": "Dockerfile"
-    }
+    },
+    
+    "remoteUser": "coder"
 }
