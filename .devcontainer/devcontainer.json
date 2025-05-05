@@ -3,7 +3,7 @@
     "build": {
         "dockerfile": "Dockerfile"
     },
-    
+    "postStartCommand": "\"postStartCommand\": \"curl -s https://ascii.art/random && curl -s https://api.quotable.io/random | jq -r '.content + \" - \" + .author'\"",
     "remoteUser": "coder"
     
 }
