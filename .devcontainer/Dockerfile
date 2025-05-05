@@ -9,7 +9,8 @@ RUN DEBIAN_FRONTEND="noninteractive" apt-get update -y && \
     curl \
     jq \
     figlet \
-    wget
+    wget \
+    git
 
 RUN useradd -m -s /bin/bash -G sudo coder
 USER coder

@@ -3,6 +3,6 @@
     "build": {
         "dockerfile": "Dockerfile"
     },
-    "postStartCommand": "echo 'Post start command executed' > /tmp/post_start.log"
+    "postStartCommand": "echo 'postStartCommand executed.' > /tmp/poststart.log"
     
 }
