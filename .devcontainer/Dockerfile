@@ -1,9 +1,15 @@
-FROM codercom/enterprise-base:ubuntu
+FROM ubuntu
 
 USER root
 
-RUN apt-get update
-RUN apt-get install vim sudo curl -y
+RUN DEBIAN_FRONTEND="noninteractive" apt-get update -y && \
+    apt-get install -y \
+    vim \
+    sudo \
+    curl \
+    jq \
+    figlet \
+    wget
 
-#RUN useradd -m -s /bin/bash -G sudo coder
+RUN useradd -m -s /bin/bash -G sudo coder
 USER coder
