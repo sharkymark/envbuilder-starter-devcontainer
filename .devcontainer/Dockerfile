@@ -8,7 +8,6 @@ RUN DEBIAN_FRONTEND="noninteractive" apt-get update -y && \
     sudo \
     curl \
     jq \
-    figlet \
     wget \
     git
 
