@@ -3,6 +3,6 @@
     "build": {
         "dockerfile": "Dockerfile"
     },
-    "postStartCommand": "curl -s https://ascii.art/random && curl -s https://api.quotable.io/random | jq -r '.content + \" - \" + .author' > /tmp/poststart.log"
+    "postStartCommand": "bash -c 'curl -s https://ascii.art/random && curl -s https://api.quotable.io/random | jq -r \".content + \\\" - \\\" + .author\"'"
     
 }
